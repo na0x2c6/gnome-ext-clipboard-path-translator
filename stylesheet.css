@@ -1,0 +1,8 @@
+.paste-modifier-toast {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    border-radius: 14px;
+    padding: 10px 18px;
+    font-size: 13pt;
+    font-weight: bold;
+}

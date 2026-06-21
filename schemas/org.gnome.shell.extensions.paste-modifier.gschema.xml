@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.paste-modifier"
+          path="/org/gnome/shell/extensions/paste-modifier/">
+    <key name="paste-unix" type="as">
+      <default><![CDATA[['<Alt>v']]]></default>
+      <summary>Paste clipboard as a UNIX-style path</summary>
+    </key>
+    <key name="paste-windows" type="as">
+      <default><![CDATA[['<Alt><Shift>v']]]></default>
+      <summary>Paste clipboard as a Windows-style path</summary>
+    </key>
+    <key name="style" type="s">
+      <choices>
+        <choice value="wsl"/>
+        <choice value="msys"/>
+        <choice value="plain"/>
+      </choices>
+      <default>"wsl"</default>
+      <summary>Drive-letter mapping style</summary>
+    </key>
+    <key name="restore-clipboard" type="b">
+      <default>true</default>
+      <summary>Restore the original clipboard after pasting</summary>
+    </key>
+    <key name="notify-on-paste" type="b">
+      <default>true</default>
+      <summary>Show an on-screen notification after converting and pasting</summary>
+    </key>
+    <key name="paste-delay" type="i">
+      <range min="0" max="2000"/>
+      <default>60</default>
+      <summary>Delay in milliseconds before sending the paste keystroke</summary>
+    </key>
+  </schema>
+</schemalist>
