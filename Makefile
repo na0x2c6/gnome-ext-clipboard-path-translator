@@ -1,10 +1,10 @@
-uuid := paste-modifier@na0x2c6.com
+uuid := clipboard-path-translator@na0x2c6.com
 
 THIS_DIR := $(patsubst %/,%,$(dir $(lastword $(MAKEFILE_LIST))))
 SCHEMES_DIR := $(THIS_DIR)/schemas
 
 gschemas-compiled := $(SCHEMES_DIR)/gschemas.compiled
-gschema-xml := $(SCHEMES_DIR)/org.gnome.shell.extensions.paste-modifier.gschema.xml
+gschema-xml := $(SCHEMES_DIR)/org.gnome.shell.extensions.clipboard-path-translator.gschema.xml
 
 GLIB_COMPILE_SCHEMAS := glib-compile-schemas
 DBUS_RUN_SESSION := dbus-run-session

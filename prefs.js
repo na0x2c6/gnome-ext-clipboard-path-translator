@@ -128,7 +128,7 @@ export default class PasteModifierPreferences extends ExtensionPreferences {
 
         const behavior = new Adw.PreferencesGroup({
             title: 'Behavior',
-            description: 'UNC paths (\\\\server\\share) always map to smb://server/share.',
+            description: 'NOTE: UNC paths (\\\\server\\share) always map to smb://server/share.',
         });
         page.add(behavior);
 

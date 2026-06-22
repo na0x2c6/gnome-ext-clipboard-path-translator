@@ -3,7 +3,7 @@ SPDX-FileCopyrightText: 2026 na0x2c6
 SPDX-License-Identifier: GPL-2.0-or-later
 -->
 
-# Paste Modifier
+# Clipboard Path Translator
 
 A GNOME Shell extension that pastes clipboard text as a file path converted
 to UNIX or Windows format with a dedicated shortcut.
@@ -41,20 +41,21 @@ This extension is **under active development** and has not been published yet.
 ## Installation (from source)
 
 ```bash
-UUID="paste-modifier@na0x2c6.com"
+UUID="clipboard-path-translator@na0x2c6.com"
 EXT="$HOME/.local/share/gnome-shell/extensions/$UUID"
 
-mkdir -p "$EXT"
-cp -r extension.js prefs.js metadata.json stylesheet.css schemas "$EXT/"
-glib-compile-schemas "$EXT/schemas"
+mkdir -p "$HOME/.local/share/gnome-shell/extensions/"
+git clone git@github.com:na0x2c6/gnome-ext-clipboard-path-translator.git "$EXT"
+cd "$EXT"
+make
 ```
 
 Log out and back in (a Wayland session cannot reload GNOME Shell in place),
 then enable the extension:
 
 ```bash
-gnome-extensions enable paste-modifier@na0x2c6.com
-gnome-extensions prefs paste-modifier@na0x2c6.com   # open settings
+gnome-extensions enable clipboard-path-translator@na0x2c6.com
+gnome-extensions prefs clipboard-path-translator@na0x2c6.com   # open settings
 ```
 
 ## Usage

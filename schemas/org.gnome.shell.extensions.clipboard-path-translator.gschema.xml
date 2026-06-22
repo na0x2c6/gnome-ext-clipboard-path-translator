@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.gnome.shell.extensions.paste-modifier"
-          path="/org/gnome/shell/extensions/paste-modifier/">
+  <schema id="org.gnome.shell.extensions.clipboard-path-translator"
+          path="/org/gnome/shell/extensions/clipboard-path-translator/">
     <key name="paste-unix" type="as">
       <default><![CDATA[['<Alt>v']]]></default>
       <summary>Paste clipboard as a UNIX-style path</summary>

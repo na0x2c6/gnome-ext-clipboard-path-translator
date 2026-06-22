@@ -131,7 +131,7 @@ export default class PasteModifierExtension extends Extension {
     }
 
     _buildIndicator() {
-        const indicator = new PanelMenu.Button(0.0, 'Paste Modifier', false);
+        const indicator = new PanelMenu.Button(0.0, 'Clipboard Path Translator', false);
         indicator.add_child(new St.Icon({
             icon_name: PANEL_ICON,
             style_class: 'system-status-icon',
@@ -256,7 +256,7 @@ export default class PasteModifierExtension extends Extension {
             return;
 
         this._toast?.destroy();
-        const toast = new St.Label({style_class: 'paste-modifier-toast', text: label});
+        const toast = new St.Label({style_class: 'clipboard-path-translator-toast', text: label});
         toast.opacity = 0;
         Main.layoutManager.uiGroup.add_child(toast);
         this._toast = toast;

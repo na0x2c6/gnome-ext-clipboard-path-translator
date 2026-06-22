@@ -1,8 +1,8 @@
 {
-  "uuid": "paste-modifier@na0x2c6.com",
-  "name": "Paste Modifier",
+  "uuid": "clipboard-path-translator@na0x2c6.com",
+  "name": "Clipboard Path Translator",
   "description": "Paste clipboard text as a file path converted to UNIX (Alt+V) or Windows (Alt+Shift+V) format.",
   "shell-version": ["50"],
-  "settings-schema": "org.gnome.shell.extensions.paste-modifier",
-  "gettext-domain": "paste-modifier"
+  "settings-schema": "org.gnome.shell.extensions.clipboard-path-translator",
+  "gettext-domain": "clipboard-path-translator"
 }
