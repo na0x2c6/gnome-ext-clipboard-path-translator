@@ -26,3 +26,7 @@ dev:
 .PHONY: ext-enable
 ext-enable:
 	$(GNOME_EXTENSIONS) enable $(uuid)
+
+.PHONY: ext-disable
+ext-disable:
+	$(GNOME_EXTENSIONS) disable $(uuid)
